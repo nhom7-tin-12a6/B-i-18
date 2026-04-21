@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỷ Niệm 12A6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;500;700&family=Saira+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #fff5f5, #ffe3e3);
+            font-family: 'Quicksand', sans-serif;
+            color: #4a4a4a;
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+
+        /* Hiệu ứng lá rơi */
+        #leaf-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .leaf {
+            position: absolute;
+            top: -50px;
+            width: 20px;
+            height: 20px;
+            background-color: #ffb7b7;
+            border-radius: 0 100% 0 100%;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Bố cục trang */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 20px;
+            position: relative;
+            z-index: 1;
+            text-align: justify;
+            border: 1px solid #ffeded;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Saira Condensed', sans-serif;
+            font-size: 3rem;
+            color: #d63031;
+            margin: 0;
+            letter-spacing: 5px;
+        }
+
+        .intro {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: #e66767;
+            display: block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content {
+            font-size: 1.2rem;
+            color: #2d3436;
+            white-space: pre-line; /* Giữ định dạng xuống dòng */
+        }
+
+        .quote {
+            font-style: italic;
+            color: #636e72;
+            border-left: 4px solid #ff7675;
+            padding-left: 20px;
+            margin: 30px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: #d63031;
+            padding-bottom: 50px;
+        }
+
+        /* Phản hồi trên mobile */
+        @media (max-width: 600px) {
+            .container { margin: 20px; padding: 20px; }
+            h1 { font-size: 2rem; }
+            .intro { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="leaf-container"></div>
+
+    <div class="container">
+        <header>
+            <span class="intro">Kính gửi...</span>
+            <h1>LỚP 12A6 THÂN YÊU</h1>
+        </header>
+
+        <div class="content">
+            Người ta thường bảo năm cuối cấp là những ngày "mài đít" trên giảng đường, là những đêm thức trắng cùng ly cà phê và những xấp đề cương dày cộp. Đúng, 12A6 cũng có những phút giây áp lực như thế, khi không gian đặc quánh tiếng lật giấy và tiếng bút sột soạt. Nhưng điểm khác biệt chính là sự đồng lòng. 
+
+            Một người không hiểu bài, cả nhóm xúm lại giảng giải. Một người mệt mỏi, cả lớp cùng bày trò trêu chọc để kéo lại nụ cười. Những buổi liên hoan vội vàng với vài bịch bánh tráng, những lần cùng nhau tập văn nghệ đến tối mịt... tất cả đã tạo nên một sợi dây liên kết vô hình nhưng bền chặt hơn bất kỳ công thức hóa học nào.
+
+            Tuy nhiên, giá trị cốt lõi nhất của 12A6 chính là sự trưởng thành trong thầm lặng. Dưới mái nhà này, chúng tôi đã học được cách bao dung cho những lỗi lầm của nhau, học cách lắng nghe những lời răn dạy của thầy cô bằng một thái độ trân trọng hơn. Mỗi cá nhân trong 12A6 đều là một thực thể độc lập, nhưng khi đứng chung dưới một cái tên, chúng tôi là một khối thống nhất. Chúng tôi hiểu rằng, kỳ thi đại học phía trước chỉ là một cột mốc, còn tình cảm chúng tôi xây dựng dưới cái mác "A6" mới là hành trang mang theo suốt cuộc đời.
+
+            <div class="quote">
+                "Thanh xuân là một cơn mưa rào, dù có bị cảm lạnh bạn vẫn muốn được đắm mình trong đó một lần nữa." - Nguyễn Nhật Ánh
+            </div>
+
+            Với tôi, 12A6 chính là cơn mưa rực rỡ nhất. Dẫu mai này mỗi người một ngả, dẫu những đẳng thức xưa có thể phai mờ, thì cái tên 12A6 vẫn sẽ luôn là một danh từ riêng nằm ở vị trí trang trọng nhất trong trái tim mỗi thành viên. Bởi lẽ, chúng tôi không chỉ học cùng nhau, chúng tôi đã cùng nhau lớn lên.
+        </div>
+
+        <footer>
+            Lời cảm ơn sâu sắc nhất!
+        </footer>
+    </div>
+
+    <script>
+        function createLeaf() {
+            const container = document.getElementById('leaf-container');
+            const leaf = document.createElement('div');
+            leaf.classList.add('leaf');
+            
+            // Ngẫu nhiên vị trí bắt đầu
+            leaf.style.left = Math.random() * 100 + 'vw';
+            
+            // Ngẫu nhiên kích thước
+            const size = Math.random() * 15 + 10 + 'px';
+            leaf.style.width = size;
+            leaf.style.height = size;
+            
+            // Ngẫu nhiên màu sắc (tông đỏ, cam, hồng)
+            const colors = ['#ffb7b7', '#ff7675', '#fab1a0', '#ff9f43'];
+            leaf.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            // Ngẫu nhiên thời gian rơi
+            const duration = Math.random() * 5 + 5 + 's';
+            leaf.style.animationDuration = duration;
+            
+            // Ngẫu nhiên độ trễ
+            leaf.style.animationDelay = Math.random() * 5 + 's';
+
+            container.appendChild(leaf);
+
+            // Xóa lá sau khi rơi xong để tránh nặng máy
+            setTimeout(() => {
+                leaf.remove();
+            }, 10000);
+        }
+
+        // Tạo lá định kỳ
+        setInterval(createLeaf, 300);
+    </script>
+</body>
+</html>
