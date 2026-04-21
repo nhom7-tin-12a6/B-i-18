@@ -1,0 +1,311 @@
+/* ===== CSS from index.html ===== */
+
+/* Thiết lập chung - Tông màu sáng */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #ffffff; 
+    color: #444;
+    overflow-x: hidden;
+}
+
+/* Hiệu ứng lá rơi lãng mạn */
+.leaf-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Menu điều hướng đẹp mắt */
+nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d63384; /* Màu hồng đậm tình cảm */
+    font-weight: 600;
+    margin: 0 25px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #ff85a2;
+    transform: translateY(-2px);
+}
+
+/* Header - Ảnh nền tập thể lớp 12A6 */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), 
+                url('z7611053045026_636c246976e291c1353cad6c49b78cae.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px 60px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.hero-text h1 {
+    font-size: 4.5rem;
+    margin: 0;
+    color: #d63384;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.hero-text p {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Nội dung gửi gắm tình thương */
+.content-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.message-box {
+    background: #fffafa;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+    line-height: 2;
+    font-size: 1.3rem;
+    border-top: 6px solid #ff85a2;
+    position: relative;
+}
+
+.message-box::before {
+    content: '"';
+    font-size: 5rem;
+    color: #ff85a2;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.3;
+}
+
+/* Album ảnh kỷ niệm lớp */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    background: #fff;
+    transition: all 0.3s ease;
+    position: relative; /* Thêm để đặt chữ lên ảnh */
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Chú thích trên ảnh */
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(214, 51, 132, 0.8);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(214, 51, 132, 0.2);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .photo-caption {
+    transform: translateY(0);
+}
+
+/* Cuối trang - Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #666;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.footer-info {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.footer-info strong {
+    color: #d63384;
+}
+
+/* Animation lá rơi */
+@keyframes fall {
+    0% { transform: translateY(-10%) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.8; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+
+.leaf {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #ffb7c5;
+    border-radius: 0 100%;
+    animation: fall 10s linear infinite;
+    filter: blur(1px);
+}
+
+
+/* ===== CSS from thethao.html ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff5f5, #ffe3e3);
+    font-family: 'Quicksand', sans-serif;
+    color: #4a4a4a;
+    overflow-x: hidden;
+    line-height: 1.8;
+}
+
+/* Hiệu ứng lá rơi */
+#leaf-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.leaf {
+    position: absolute;
+    top: -50px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffb7b7;
+    border-radius: 0 100% 0 100%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% { opacity: 0.8; }
+    90% { opacity: 0.8; }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Bố cục trang */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+    border: 1px solid #ffeded;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 3rem;
+    color: #d63031;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.intro {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #e66767;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content {
+    font-size: 1.2rem;
+    color: #2d3436;
+    white-space: pre-line; /* Giữ định dạng xuống dòng */
+}
+
+.quote {
+    font-style: italic;
+    color: #636e72;
+    border-left: 4px solid #ff7675;
+    padding-left: 20px;
+    margin: 30px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #d63031;
+    padding-bottom: 50*
+
