@@ -251,6 +251,33 @@ body {
     }
 }
 
+/* Navigation cho thethao.html */
+.thethao-nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    z-index: 999;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #d63384;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.back-link:hover {
+    color: #ff85a2;
+    background-color: rgba(255, 132, 162, 0.1);
+    transform: translateX(-5px);
+}
+
 /* Bố cục trang */
 .container {
     max-width: 800px;
@@ -307,5 +334,5 @@ footer {
     font-family: 'Dancing Script', cursive;
     font-size: 1.8rem;
     color: #d63031;
-    padding-bottom: 50*
-
+    padding-bottom: 50px;
+}
